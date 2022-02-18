@@ -1,0 +1,109 @@
+// Game Screen
+
+/* Game Screen */
+
+.game-screen {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/merchant-art.jpg');
+    background-repeat: no-repeat;
+    display: none;
+    animation: fadeIn ease 2s;
+    
+
+    /* Game Guess */
+
+    .game-guess {
+        position: absolute;
+        margin-left: 450px;
+        margin-bottom: 130px;
+        display: grid;
+        grid-template-areas:
+        " userinput text";
+
+        h2 {
+            color: whitesmoke;
+            font-size: 1.9em;
+            text-shadow: #363636 2px 2px;
+        }
+
+        .game-merchant-text {
+            grid-area: text;
+            position: relative;
+
+            .merchant-bubble-image {
+                margin: 0;
+            }
+            
+            .mtext {
+                position: absolute;
+                top: 50%;
+                left: 60%;
+                transform: translate(-60%, -50%);
+                font-size: 1.2em;
+            }
+
+        }
+    
+    }
+
+    /* Game Input */
+
+    .game-input {
+        grid-area: userinput;
+
+        .userInput, select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px #1C85FF solid;
+            border-radius: 25px;
+            width: 200px;
+            height: 30px;
+            font-size: 0.8em;
+        }
+    
+        .submit {
+            background-color: #E83213;
+            color: white;
+            font-size: 1em;
+            padding: 3px 12px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    
+        .submit:hover {
+            background-color: #FF5914;
+          }
+    }
+    
+
+}
+
+/*Animation Games Menu*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* display the list when clicked */
+
+.show .game-screen {
+    display: flex;
+  }

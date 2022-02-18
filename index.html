@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159656389-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-159656389-1');
+    </script>      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script&display=swap" rel="stylesheet"> 
+    <title>The Merchant</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-menu" id="main-menu">
+            <h1>The Merchant</h1>
+            <p>Recommended Display: 1920x1080p</p>
+            <ul>
+                <a href="#gS"><li id="start">Start</li></a>
+                <a href="#cS"><li id="credits">Credits</li></a>
+            </ul>
+        </div> <!--end of main-menu-->
+        <div class="game-screen" id="gS">
+            <div class="game-guess">
+                <div class="game-merchant-text">
+                    <img src="images/merchant-text.png" alt="merchant text bubble" class="merchant-bubble-image">
+                    <p class="mtext" id="mText">Try and guess the number, traveller.</p>
+                </div> <!--end of merchant game text-->
+                <div class="game-input">
+                    <h2>Guess the number</h2>
+                    <form>
+                        <input type="text" id="userInput" class="userInput" placeholder="Enter 0-100">
+                        <input type="submit" value="Guess" id="submit" class="submit">
+                    </form>
+                </div>
+            </div> <!--end of game guess-->
+        </div> <!--end of game-screen-->
+        <div class="game-win-screen" id="gW">
+            <h1> Congratulations !!!</h1>
+            <p id="gWt"></p>
+            <p>Please refresh the browser to play again.</p>
+            <ul>
+                <a href="#gS" id="bGS"><li>Play Again?</li></a>
+                <a href="#main-menu" id="bMain"><li>Back to Main Menu</li></a>
+            </ul>
+        </div> <!--end of game win scren-->
+        <div class="credits-screen" id="cS">
+            <h2>Credits</h2>
+            <ul>
+                <a href="https://hdqwalls.com/wallpaper/1600x1200/white-blue-red-clouds-scenery-digital-art-painting"><li>Main Background Art</li></a>
+                <a href="https://www.artstation.com/artwork/qrZvP"><li>Merchant Background Art</li></a>
+                <a href="https://www.pngguru.com/free-transparent-background-png-clipart-bdkxe"><li>Merchant Bubble Text</li></a>
+                <a href="https://www.pixelstalk.net/sky-wallpapers-hd/"><li>Win Screen Background Art</li></a>
+                <a href="https://wallup.net/fantastic-world-fantasy-6/"><li>Credits Screen Background Art</li></a>
+            </ul>
+        </div>
+    </div> <!--end of wrapper-->
+<script src="scripts/main-menu.js"></script>
+<script src="scripts/game-screen.js"></script>
+</body>
+</html>

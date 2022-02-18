@@ -1,0 +1,255 @@
+/* Variables */
+.wrapper {
+  margin: 0;
+  padding: 0; }
+
+/*Main Menu Screen*/
+.main-menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/main-art.jpg"); }
+  .main-menu h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 4em;
+    text-align: center;
+    color: #363636;
+    animation: titleFade ease-in-out 5s; }
+  .main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /*Animation Main Menu*/ }
+    .main-menu ul a {
+      text-decoration: none; }
+    .main-menu ul li {
+      margin: 30px 0;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 1.5em;
+      background-image: url(../images/board-button.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      color: #f5f5f5;
+      animation: fadeIn ease 4s; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes titleFade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* Game Screen */
+.game-screen {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/merchant-art.jpg");
+  background-repeat: no-repeat;
+  display: none;
+  animation: fadeIn ease 2s;
+  /* Game Guess */
+  /* Game Input */ }
+  .game-screen .game-guess {
+    position: absolute;
+    margin-left: 450px;
+    margin-bottom: 130px;
+    display: grid;
+    grid-template-areas: " userinput text"; }
+    .game-screen .game-guess h2 {
+      color: whitesmoke;
+      font-size: 1.9em;
+      text-shadow: #363636 2px 2px; }
+    .game-screen .game-guess .game-merchant-text {
+      grid-area: text;
+      position: relative; }
+      .game-screen .game-guess .game-merchant-text .merchant-bubble-image {
+        margin: 0; }
+      .game-screen .game-guess .game-merchant-text .mtext {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-60%, -50%);
+        font-size: 1.2em; }
+  .game-screen .game-input {
+    grid-area: userinput; }
+    .game-screen .game-input .userInput, .game-screen .game-input select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      box-sizing: border-box;
+      border: 2px #1C85FF solid;
+      border-radius: 25px;
+      width: 200px;
+      height: 30px;
+      font-size: 0.8em; }
+    .game-screen .game-input .submit {
+      background-color: #E83213;
+      color: white;
+      font-size: 1em;
+      padding: 3px 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer; }
+    .game-screen .game-input .submit:hover {
+      background-color: #FF5914; }
+
+/*Animation Games Menu*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* display the list when clicked */
+.show .game-screen {
+  display: flex; }
+
+/* Game Win Screen */
+.game-win-screen {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/win-art.jpg");
+  background-repeat: no-repeat;
+  display: none;
+  animation: fadeIn ease 2s;
+  color: #f5f5f5; }
+  .game-win-screen h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 4em;
+    text-align: center;
+    animation: titleFade ease-in-out 2s;
+    text-shadow: black 2px 2px; }
+  .game-win-screen p {
+    font-size: 2em;
+    text-shadow: black 2px 2px; }
+  .game-win-screen ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /*Animation win Screen*/ }
+    .game-win-screen ul a {
+      text-decoration: none; }
+    .game-win-screen ul li {
+      margin: 30px 0;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 1.5em;
+      background-image: url(../images/board-button.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      color: #f5f5f5;
+      animation: fadeIn ease 4s; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes titleFade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* display the list when clicked */
+.show .game-win-screen {
+  display: flex; }
+
+/* Credits Screen */
+.credits-screen {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/credits-art.jpg");
+  background-repeat: no-repeat;
+  display: none;
+  animation: fadeIn ease 2s;
+  color: #f5f5f5; }
+  .credits-screen h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 4em;
+    text-align: center;
+    color: #363636;
+    animation: titleFade ease-in-out 5s; }
+  .credits-screen ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .credits-screen ul a {
+      text-decoration: none; }
+    .credits-screen ul li {
+      margin: 30px 0;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 1.5em;
+      background-image: url(../images/board-button.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      color: #f5f5f5;
+      animation: fadeIn ease 4s; }
+
+/* display the list when clicked */
+.show .credits-screen {
+  display: flex; }
+
+/*HTML Reset*/
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* Body Reset */
+body {
+  margin: 0;
+  padding: 0;
+  /* typography */
+  font-family: "Kaushan Script", Arial, Helvetica, sans-serif;
+  font-family: 'Caveat', Arial, Helvetica, sans-serif;
+  background-color: whitesmoke; }
+
+/* Image Reset */
+img {
+  width: 100%;
+  height: auto; }
+
+/* Typography Resets */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*# sourceMappingURL=style.css.map */

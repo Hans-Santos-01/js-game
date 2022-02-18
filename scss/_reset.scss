@@ -1,0 +1,34 @@
+// Resets
+/*HTML Reset*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* Body Reset */
+body {
+    margin: 0;
+    padding: 0;
+    /* typography */
+    font-family: 'Kaushan Script', Arial, Helvetica, sans-serif ;
+    font-family: 'Caveat', Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Image Reset */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Typography Resets */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+} 
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

@@ -1,0 +1,87 @@
+// Game Win
+
+/* Game Win Screen */
+
+.game-win-screen {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/win-art.jpg');
+    background-repeat: no-repeat;
+    display: none;
+    animation: fadeIn ease 2s;
+    color: $txt-clr;
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 4em;
+        text-align: center;
+        animation: titleFade ease-in-out 2s;
+        text-shadow: black 2px 2px;
+    }
+
+    p {
+        font-size: 2em;
+        text-shadow: black 2px 2px;
+    }
+
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            margin: 30px 0;
+            padding: 0 20px;
+            text-align: center;
+            font-size: 1.5em;
+            background-image: url(../images/board-button.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            color: $txt-clr;
+            animation: fadeIn ease 4s;
+        }
+
+        // Animation Win Screen
+
+        /*Animation win Screen*/
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes titleFade {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* display the list when clicked */
+
+.show .game-win-screen {
+    display: flex;
+  }
+
